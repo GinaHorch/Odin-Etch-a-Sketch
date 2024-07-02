@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('#grid-container');
+
+    const createGrid = (size) => {
+        for (let i = 0; i < size * size; i++) {
+            const div = document.createElement('div');
+            div.classList.add('grid-item');
+            container.appendChild(div);
+    }
 }
-)
+createGrid(16);
+});
