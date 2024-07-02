@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < size * size; i++) {
             const div = document.createElement('div');
             div.classList.add('grid-item');
+            div.addEventListener('mouseover', () => {
+                div.classList.add('hovered');
+            });
             container.appendChild(div);
     }
 }
