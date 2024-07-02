@@ -14,3 +14,9 @@ body {
     height: 400px;
     border: 2px solid #000;
 }
+
+.grid-item {
+    flex: 1 0 6.25%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
